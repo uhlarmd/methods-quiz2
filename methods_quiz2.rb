@@ -1,7 +1,7 @@
 module MethodsQuiz2
 	
 	def without_doubles(a,b,doubles)
-		if a == b || doubles == true
+		if a == b && doubles == true
 			if a == 6
 				if a == b
 					a = a - 5
