@@ -1,48 +1,56 @@
 module MethodsQuiz2
-	def without_doubles?(a,b)
-		if a == b
-		 if a == 6
-		 	a = 1
-		else
-			a = a + 1
+	
+	def without_doubles(a,b,doubles)
+		if a == b || doubles == true
+			if a == 6
+				if a == b
+					a = a - 5
+			else
+				a = a + 1
+				end
 			end
 		end
 		return a + b
 	end
 
-	def max_maybe(a,b)
 
-		if a==b
+
+	def max_maybe(a,b)
+		if a == b
 			return 0
 		elsif a % 5 == b % 5
 			if a < b
 				return a
-			else
+			else 
 				return b
-		end
+			end
+		else 
 			if a < b
-			return b
-		else
-			return a
+				return b
+			else
+				return a
 			end
 		end
 	end
 
-	def squirrels_play?
+
+
+	def squirrels_play?(a,b)
 		if b == true
-			if a == 100 && a >= 60
+			if a <= 100 && a >= 60
 				return true
 			else
 				return false
 			end
-		elsif b==false
-			if a<=90 && a>=60
+
+		elsif b == false
+			if a <= 90 && a >= 60
 				return true
 			else
 				return false
 			end
 		end
-			end
-			
 	end
+		
+
 end

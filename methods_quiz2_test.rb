@@ -13,10 +13,10 @@ class MethodsQuizTest < MiniTest::Test
 
 	# TODO - write tests here
 	def test_without_doubles
-		assert_equal 11, @m.without_doubles?(5,5)
-		assert_equal 11, @m.without_doubles?(6,5)
-		assert_equal 7, @m.without_doubles?(6,6)
-		assert_equal 5, @m.without_doubles?(1,4)
+		assert_equal 11, @m.without_doubles(5,5,false)
+		assert_equal 11, @m.without_doubles(6,5,true)
+		assert_equal 7, @m.without_doubles(6,6,false)
+		assert_equal 5, @m.without_doubles(1,4,true)
 	end
 
 	def test_max_maybe
